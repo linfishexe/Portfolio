@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="icon" type="image/x-icon" href="/img/faviocn.ico">
+    <title>關於我們</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a target="_self"><h1 class="logo">COMPANY</h1></a>
+    
+            <ul class="top_menu">
+                <li><a href="./index.html">首頁</a></li>
+                <li class="have_items"><a href="./produce.html" target="_self">產品</a></li>
+                <li><a href="./video.html">教學影片</a></li>
+                <li><a href="./about.html" target="_self">關於我們</a></li>
+                <li><a href="./reserve.html" target="_self">預約資訊</a></li>
+            </ul>
+            <button class="side_menu_button">
+                <div></div>
+                <div></div>
+            </button>
+            <div class="side_menu">
+                <ul>
+                    <li><a href="./index.html" target="_self">首頁</a></li>
+                    <li class="side_menu_item">
+                        <a href="./produce.html" target="_self">產品</a>
+                    </li> 
+                    <li><a href="./video.html">教學影片</a></li>
+                    <li><a href="./about.html" target="_self">關於我們</a></li>
+                    <li><a href="./reserve.html" target="_self">預約資訊</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="banner">
+            <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+        </div>
+    </header>
+
+    <main>
+        <section id="member">
+            <h2>優秀團隊</h2>
+            <div class="aos slideIn">
+                <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+                <div>
+                    <b><article>創意設計師</article></b>
+                    <p>我們的創意設計師擅長將靈感轉化為實體作品<br>致力於探索新材料和技術，以推動創新的手作風格。</p>
+                </div>
+                
+            </div>
+            <div class="aos slideIn">
+                <div>
+                    <b><article>工藝專家</article></b>
+                    <p>工藝專家具備深厚的手作技藝<br>專注於細節，確保每一件作品都達到高品質的標準。</p>
+                </div>
+                <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+            </div>
+            <div class="aos slideIn">
+                <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+                <div>
+                    <b><article>市場推廣專員</article></b>
+                    <p>市場推廣專員負責將我們的手作藝術帶給更廣泛的觀眾<br>透過各種平台分享我們的創作故事。</p>
+                </div>
+                </div>
+        </section>
+        <section id="social_media" class="aos slideIn">
+            <a href="https://www.instagram.com/the_moomoo_slime?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <img src="./img/instagram.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/Jumboblock.playland/?locale=zh_TW">
+                    <img src="./img/facebook.png" alt="">
+            </a>
+            <a href="">
+                    <img src="./img/location.png" alt="">
+            </a>
+           
+        </section>
+        <section id="Comment">
+            <h2>GOOGLE 評論</h2>
+            <div class="content">
+                <div class="aos slideIn">
+                    <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+                </div>
+                <div class="aos slideIn">
+                    <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+                </div>
+            </div>
+            <div class="content">
+                <div class="aos slideIn">
+                    <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+                </div>
+                <div class="aos slideIn">
+                    <img class="item1" src="https://picsum.photos/450/650?random=1" alt="隨機圖片">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <img src="./img/banner.png" alt="" class="F_logo">
+            <div class="info">
+                <h3>公司資訊</h3>
+                    <p>公司公司-公司公司</p>
+                    <p>公司公司公司公司公司公司公司公司公司公司</p>
+                    <p>公司公司公司公司公司公司公司 </p>
+            </div>
+            <div class="info">
+                <h3>聯絡我們</h3>
+                    <a href="">
+                        <img src="./img/FB_B.png" alt="">facebook
+                    </a>
+                    <a href="">
+                        <img src="./img/IG_B.png" alt="">instagram
+                    </a>
+                    <a href="tel:0000-000-000">
+                        <img src="./img/phone-call_B.png" alt="">0000-000-000
+                    </a>
+            </div>
+        </section>
+        <section class="Copyright">
+            <p><small>Copyright © 2024 TheMooMoo. All Rights Reserved</small></p>
+        </section>
+        
+    </footer>
+</body>
+<script>
+    document.querySelector(".side_menu_button").addEventListener("click", () => {
+        document.querySelector(".side_menu_button").classList.toggle("side_menu_button_open")
+        document.querySelector(".side_menu").classList.toggle("side_menu_open")
+    })
+    document.querySelectorAll('.side_menu_item > ul').forEach(ul => {
+        let total_height = 0;
+        ul.querySelectorAll('li').forEach(li => {
+            total_height += li.clientHeight
+        })
+
+    });
+
+    function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.bottom < 0 || rect.top > window.innerHeight;
+}
+
+function addClassToVisibleElements() {
+  var aosElements = document.querySelectorAll(".aos");
+  aosElements.forEach(function (aosElement) {
+    if (!isElementInViewport(aosElement)) aosElement.classList.add("ed");
+    else aosElement.classList.remove("ed");
+  });
+}
+
+document.addEventListener("scroll", addClassToVisibleElements);
+
+addClassToVisibleElements();
+</script>
+</html>

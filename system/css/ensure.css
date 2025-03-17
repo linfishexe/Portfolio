@@ -1,0 +1,88 @@
+.ensure{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.info{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.379);
+}
+.ensure .hint{
+    width: 380px;
+    height: 200px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ensure .hint p{
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.15em;
+    padding-top: 55px;
+}
+.ensure .hint button{
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    background-color: var(--maincolor);
+    color: var(--maincolor2);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.yes{left: 50px;}
+.no{right: 50px;}
+
+.hint button:hover{
+    background-color: #46616b;
+}
+.info .hint p{
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.15em;
+    padding-top: 40px;
+}
+.info .hint{
+    width: 450px;
+    height: 200px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.info .hint button{
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    background-color: var(--maincolor);
+    color: var(--maincolor2);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.ok{
+    position: absolute;
+    bottom: 20px;
+    left: calc(40% - 12px);
+}

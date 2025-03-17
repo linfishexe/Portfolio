@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/*視窗背景色設定*/
+body  {
+    background-image: url(img/880.jpg);
+    background-color: #fdfff5;
+    background-repeat: repeat-x;
+    /*測試背景色相關屬性*/
+    background-attachment:fixed;}
+/*連結顏色設定*/
+a{color:rgb(245, 177, 177)}
+
+/*連結顏色設定*/
+a{
+    color: #df4839;
+}
+a:hover{
+    color: #ff705b;
+    text-decoration:none;
+}
+/*頁首,導覽,頁尾的共通設定*/
+header,nav,footer{
+    text-align: center;
+}
+
+/*導覽樣式設定*/
+.meau li{
+    list-style-type:none;
+    display:inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+.meau a {
+    display:block;
+    padding: 10px;
+    background: #e99898;
+    border-radius: 8px;
+    color:#fff;
+    text-decoration: none;
+}
+/*頁面標題設定*/
+h1{
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid #ab7be9;
+    background-color: #ee8a93;
+    color: #fff;
+    font-size: 300%;
+    text-align:center;
+    line-height: 1px ;
+    box-shadow: 1px 2px 10px #1e4628;
+    background-image:linear-gradient(bottom,#6fbb9a,#4a9d79)
+    }
+/*次標題設定*/
+h2{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted#86bec3;
+    border-left: 10px  solid #7229e9;
+    color: #5682e9;
+}
+.h{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted#9994c8;
+    border-left: 10px  solid #d0e35b;
+    color: #6fbb9a;
+}
+/*小標題設定*/
+.h-sub span{
+    font-weight: normal;
+}
+
+/*內容區塊邊框設定*/
+#contents{
+    margin :40px;
+    padding: 100px 80px;
+    border: 2px solid#f6bb9e;
+    background-color: rgba(242, 231, 246, 0.856);}
+
+/*「更多介紹」連結設定*/
+.more { 
+    text-align:right;
+}
+.more::after{
+    content: url(img/ico_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+}
+/*連結圖示設定*/
+a[target="blank"]::after{
+    content: url(img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+a[href ^="mailto"]::after{
+    content: url(img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+/*區塊間分隔*/
+#contents > section+section{
+    margin-top: 80px;
+}
+
+/*文繞圖設定*/
+.left {
+    float: left;
+    margin: left 500px;
+    margin:right 100px;
+}
+.clear{
+    clear: both;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.img-round {
+    border-radius: 100px;
+}

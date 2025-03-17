@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+}
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e4;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f1e4;
+    a{
+        text-decoration: none;
+        color: #322a23;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        img{
+            width: 90px;
+            height: 60px;
+        }
+    }
+    }
+
+    .nav-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    .nav-menu ul li {
+        display: inline;
+    }
+    .nav-menu ul li a {
+        text-decoration: none;
+        color: #322a23;
+        font-size: 18px;
+    }
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+.hero {
+    height: 300px;
+    background-color: #f8f1e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-text {
+        text-align: center;
+        button{
+            width: 120px;
+            height: 50px;
+            margin-top: 1rem;
+        }
+    }
+}
+.feature, .menu, .promotions, .Reviews {
+    padding: 40px 20px;
+}
+.about{
+    padding: 20px 20px;
+    background-color: #4d4238;
+    h3{
+        text-align: center;
+        color: #fff;
+    }
+}
+.feature{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .feature_pic{
+        width: 100%;
+        background-color: #CCC;
+        max-width: 500px;
+        min-width: 300px;
+        min-height: 400px;
+    }
+    .feature_content{
+        width:100%;
+        max-width: 500px;
+        min-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &>div{
+            width: 200px;
+            padding: 10px 20px;
+            border: 0.5px solid #322a23;
+            background-color: #fff;
+            margin: 5px;
+            h3{
+                text-align: center;
+            }
+            p{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+.menu{
+    background-color: #322a23;
+    button{
+        width: 120px;
+        height: 50px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+    }
+    h2,p{
+        color: #fff;
+        text-align: center;
+    }
+}
+.promotions{
+    h2{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    &>div{
+        display: flex;
+        justify-self: center;
+        div{
+            width: 250px;
+            height: 200px;
+            padding: 10px 20px;
+            border: 0.5px solid #322a23;
+            background-color: #ccc;
+            margin: 10px 0;
+            &:not(:nth-child(1)){
+                margin-left: 20px;
+            }
+            &:nth-child(even){
+                transform: translateY(20px);
+            }
+            p{
+                text-align: center;
+                margin-top: 30px;
+            }
+            button{
+                width: 120px;
+                height: 40px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+hr{
+    width: 80%;
+    border: 2px dotted #322a23;
+}
+.Reviews{
+    .Reviews_content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .Reviews_img{
+            background-color: #CCC;
+            width: 100%;
+            max-width: 500px;
+            min-width: 300px;
+            min-height: 400px;
+            border: 1px solid #322a23;
+            margin-right: 1.5rem;
+        }
+        .Reviews_text{
+            width: 500px;
+            height: 300px;
+            margin-left: 20px;
+            h2{
+                text-align: center;
+                line-height: 2rem;
+            }
+            div{
+                padding: 10px 5px;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #50453b;
+    color: white;
+}
+
+//----------------RWD 漢堡條
+@media (max-width: 768px) {
+    header{
+        .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #c4a484;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav-menu ul li {
+        padding: 10px 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-menu.active {
+        display: block;
+    }
+    .feature_content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+    
+}
+@media (max-width: 500px) {
+    .feature{
+        .feature_content{
+            &>div{
+                display: block;
+                width:100%;
+                margin-left: 1.2rem;
+                margin-right: 1.2rem;
+            }
+        }
+        .feature_pic{
+            height: 650px;
+        }
+    }
+}
+@media (max-width: 980px) {
+    .feature{
+        padding: 0;
+        .feature_content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+    }
+    
+    .Reviews{
+        .Reviews_content{
+            width: 100%;
+            .Reviews_img{
+                margin-right: 0;
+            }
+            .Reviews_text{
+                width: 50%;
+                min-width: 250px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 1350px) {
+    .promotions{
+        &>div{
+            width: 100%;
+            display: block;
+          div{
+            width: 100%;
+            &:not(:nth-child(1)){
+                margin-left: 0;
+            }
+            &:nth-child(even){
+                transform: translateY(0);
+            }
+            
+          }  
+        }
+    }
+}

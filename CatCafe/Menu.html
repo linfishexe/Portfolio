@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貓老闆菜單</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CatCafe_index_style.css">
+    <script defer src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+            
+            hamburger.addEventListener("click", function() {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+    <style>
+        .menu-container {
+            text-align: center;
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            color: #6b5b4b;
+        }
+        .category {
+            font-size: 24px;
+            color: #8b7d6b;
+            margin: 20px 0;
+            border-bottom: 2px dashed #c0a98e;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-container>ul>li {
+            background: #f3e7db;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .price {
+            font-weight: bold;
+            color: #b45f06;
+        }
+        .english {
+            font-size: 14px;
+            color: #666;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .image-slot {
+            width: 30%;
+            height: 150px; /* 增加圖片區的高度 */
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        @media (max-width: 600px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-slot {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./CatCafe_index.html"><div class="logo"><img src="./貓老闆LOGO.png" alt="貓老闆LOGO">貓老闆咖啡</div></a>
+        <button class="hamburger">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="./CatCafe_index.html">首頁</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-container">
+        <h1>🐱 貓老闆 MENU 🐱</h1>
+        
+        <div class="category">燉飯 Risotto</div>
+        <ul>
+            <li>綜合野菇青醬 <br><span class="english">Basil Green Sauce Mushroom</span> <span class="price">$230</span></li>
+            <li>法式松露奶油蔬食 <br><span class="english">Truffle Cream Sauce Vegetable</span> <span class="price">$240</span></li>
+            <li>和風柴魚醬燒豬肉 <br><span class="english">Pork With Soy Sauce Risotto</span> <span class="price">$250</span></li>
+            <li>南島辣紅咖哩雞肉 <br><span class="english">Thai Spicy Curry</span> <span class="price">$300</span></li>
+            <li>蛤蜊爆香青醬/白醬 <br><span class="english">Green Sauce/Cream Sauce Clams</span> <span class="price">$290</span></li>
+            <li>香酥雞腿排白醬 <br><span class="english">Fried Chicken Chop With Cream Sauce</span> <span class="price">$260</span></li>
+        </ul>
+        
+        <div class="image-container">
+            <img class="image-slot" src="Image/2.png" alt="Risotto">
+            <img class="image-slot" src="Image/5.png" alt="Risotto">
+            <img class="image-slot" src="Image/3.png" alt="Risotto">
+        </div>
+
+        <div class="category">義大利麵 Pasta</div>
+        <ul>
+            <li>綜合野菇青醬 <br><span class="english">Basil Green Sauce Mushroom</span> <span class="price">$220</span></li>
+            <li>法式松露奶油蔬食 <br><span class="english">Truffle Cream Sauce Vegetable</span> <span class="price">$230</span></li>
+            <li>蛤蜊爆香青醬/白醬 <br><span class="english">Green Sauce/Cream Sauce Clams</span> <span class="price">$290</span></li>
+            <li>泰式酸辣海鮮（微辣） <br><span class="english">Thai Spicy Seafood</span> <span class="price">$320</span></li>
+            <li>韓式部隊辣起司 <br><span class="english">Spicy Kimchi Cheese Pork</span> <span class="price">$260</span></li>
+        </ul>
+        
+        <div class="image-container">
+            <img class="image-slot" src="Image/4.png" alt="Risotto">
+            <img class="image-slot" src="Image/1.png" alt="Risotto">
+            <img class="image-slot" src="Image/6.png" alt="Risotto">
+        </div>
+
+        <div class="category">咖啡 Coffee</div>
+        <ul>
+            <li>美式咖啡 <br><span class="english">Americano</span> <span class="price">$130</span></li>
+            <li>海鹽奶蓋美式 <br><span class="english">Seasalt Milk Foam Americano</span> <span class="price">$140</span></li>
+            <li>經典拿鐵 <br><span class="english">Latte</span> <span class="price">$150</span></li>
+            <li>玫瑰拿鐵 <br><span class="english">Rose Latte</span> <span class="price">$150</span></li>
+            <li>焦糖拿鐵 <br><span class="english">Caramel Latte</span> <span class="price">$160</span></li>
+            <li>太妃拿鐵 <br><span class="english">Toffee Latte</span> <span class="price">$170</span></li>
+        </ul>
+    </div>
+    <footer>
+        <p>聯繫我們：地址 | 電話 | 社交媒體</p>
+        <small>Copyright © 2025 CAT CAFE. All Rights Reserved</small>
+    </footer>
+</body>
+</html>

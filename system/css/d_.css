@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+}
+body{
+    background-color: #a5b7ce;
+    background-image: url(./1.jpg);
+    background-size: cover;
+}
+.screen{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(50%) blur(3px);
+}
+input{
+    outline: none;
+}
+.start{
+    width: 480px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    display: block;
+    /* border: 2px solid var(--maincolor); */
+    border-radius: 10px;
+    box-shadow: 0 0 8px #fefefe;
+    /*     Ctrl + /   */
+
+}
+.start input{
+    width: 80%;
+    height: 50px;
+    background-color: aliceblue;
+    color: var(--maincolor);
+    display: block;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+button{
+    background-color: aliceblue;
+    color: #283b42;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+}
+b{
+    background-color: aliceblue;
+    
+}
+button:hover{
+    background-color: rgb(226, 233, 240);
+}
+.enter{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    color: var(--maincolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+}
+.enter h2{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 2em;
+}
+.start>img{
+    position: relative;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 連結 */
+a{
+    text-decoration: none;
+}

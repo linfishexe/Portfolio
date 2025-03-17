@@ -1,0 +1,153 @@
+.list1 {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    background-color: var(--maincolor);
+}
+
+.list1::-webkit-scrollbar {
+    display: none;
+}
+
+.list1 h3:hover {
+    color: beige;
+}
+
+.list1 ul {
+    width: 100%;
+    list-style-type: none;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+
+.list1 ul li {
+    margin: 0 20px;
+    color: aliceblue;
+    display: block;
+    cursor: pointer;
+}
+
+.list1 ul li:hover {
+    color: beige;
+}
+/*-----menu----------------------------*/
+.menu {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu ul {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 10%;
+    padding-top: 40px;
+}
+
+.menu h3 {
+    width: 10%;
+    height: 100%;
+    color: var(--maincolor2);
+    text-align: center;
+    position: absolute;
+    padding-top: 40px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: var(--maincolor);
+    z-index: 1;
+}
+
+.menu ul li {
+    height: 100%;
+    display: block;
+}
+
+.menu .a {
+    color: aliceblue;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu .c {
+    width: 0 20px;
+    color: aliceblue;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu .logout a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*-----a_menu----------------------------*/
+
+.a_menu{
+    width: 100%;
+    height: 15%;
+    padding-left: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.a_menu ul {
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    background-color: var(--maincolor);
+    bottom: 100px;
+    display: none;
+    bottom: 0;
+    left: calc(10% + 56px + 56px + 30px);
+    padding: 0;
+}
+
+.a_menu ul li {
+    display: block;
+    width: 100%;
+    height: 40%;
+    margin-left: 0;
+    line-height: 75px;
+    position: relative;
+    text-align: center;
+}
+
+/*-----c_menu----------------------------*/
+
+.c_menu {
+    width: 100%;
+    height: 15%;
+    padding-left: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.c_menu ul {
+    width: 120px;
+    position: absolute;
+    background-color: var(--maincolor);
+    display: none;
+    bottom: 0;
+    left: calc(80px + 10% + 56px + 56px + 84px + 56px + 40px);
+    padding: 0;
+}
+
+.c_menu ul li {
+    display: block;
+    width: 100%;
+    height: 40%;
+    margin-left: 0;
+    line-height: 75px;
+    position: relative;
+    text-align: center;
+}

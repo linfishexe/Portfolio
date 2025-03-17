@@ -1,0 +1,219 @@
+header {
+  height: min(100vh, 100vw);
+  padding-top: 80px;
+}
+header #banner img {
+  max-width: 700px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main section {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+main #trope {
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #trope div {
+  width: 90%;
+  max-width: 1000px;
+  padding: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #trope h2 {
+  font-size: min(3rem, 7vw);
+  text-align: center;
+  letter-spacing: 0.5rem;
+  animation: show 1s ease-in-out 0s 1 normal none;
+}
+main #trope p {
+  padding-top: 20px;
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  animation: show 1s ease-in-out 0.3s 1 normal none;
+}
+main #trope::before {
+  width: 70%;
+  height: 2px;
+  background: #4d70c1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+main #trope::after {
+  width: 50%;
+  height: 2px;
+  background: #4d70c1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+main #produce {
+  display: flex;
+  justify-content: center;
+}
+main #produce div {
+  width: 300px;
+  padding: 2rem;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+main #produce div img {
+  left: 50%;
+  transform: scale(1) translateX(-50%);
+  width: 100%;
+  border: 3px solid rgba(191, 111, 111, 0);
+  border-radius: 50%;
+}
+main #produce div article {
+  font-size: 1.1rem;
+  margin-top: 25px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+main #produce div p {
+  line-height: 1.75rem;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+}
+main #produce div:hover {
+  box-shadow: 0 0 15px #4d70c1;
+}
+main #Business_time {
+  display: flex;
+  justify-content: center;
+}
+main #Business_time h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main #Business_time .time {
+  margin: 0 5%;
+  margin-bottom: 5vh;
+  border-right: 1px solid #ccc;
+}
+main #Business_time .time table {
+  padding: 5px 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #Business_time .time table tr td {
+  padding: 10px;
+}
+main #Business_time .time table tr td:nth-child(1) {
+  width: 100px;
+}
+main #Business_time .map iframe {
+  width: 300px;
+  height: 300px;
+}
+main #NEWS {
+  overflow: hidden;
+}
+main #NEWS h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main #NEWS .container {
+  display: flex;
+  transition: left 0.3s;
+  justify-content: center;
+}
+main #NEWS .container > div {
+  width: 30%;
+  min-width: 320px;
+  flex-shrink: 0;
+  border: 1px solid #33605b;
+  margin: 0 1.5rem;
+  overflow: hidden;
+}
+main #NEWS .container > div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+main #NEWS .container > div .NEWS_infor {
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(204, 204, 204, 0);
+}
+main #NEWS .container > div .NEWS_infor p {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+main #NEWS .container > div:hover img {
+  transform: scale(1.1);
+}
+main #NEWS .container > div:hover .NEWS_infor {
+  background-color: rgba(7, 7, 7, 0.8196078431);
+}
+main #NEWS .container > div:hover .NEWS_infor p {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  main #Business_time {
+    flex-wrap: wrap;
+  }
+  main #Business_time .time {
+    border: none;
+    margin-right: 0;
+  }
+  main #Business_time .map {
+    width: 100%;
+  }
+  main #Business_time .map iframe {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #NEWS {
+    overflow: visible;
+  }
+  #NEWS .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #NEWS .container > div:not(:first-child) {
+    margin: 20px 1.5rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  main #produce {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

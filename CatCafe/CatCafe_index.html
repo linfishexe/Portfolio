@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貓老闆咖啡</title>
+    <link rel="stylesheet" href="./CatCafe_index_style.css">
+    <script defer src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+            
+            hamburger.addEventListener("click", function() {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="./CatCafe_index.html"><div class="logo"><img src="./貓老闆LOGO.png" alt="貓老闆LOGO">貓老闆咖啡</div></a>
+        <button class="hamburger">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="./Menu.html">菜單</a></li>
+                <li><a href="#promotions">活動與優惠</a></li>
+                <li><a href="">線上訂餐</a></li>
+                <li><a href="">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>讓每一杯咖啡都充滿愛的味道</h1>
+            <button>立即預約/訂位</button>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h3>我們是一家致力於貓咪收養與愛護的咖啡廳，提供舒適溫馨的環境給所有愛貓人士。</h3>
+    </section>
+
+    <section id="feature" class="feature">
+        <div class="feature_content">
+            <div>
+                <h3>寵物友善</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div>
+                <h3>清潔舒適</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+            </div>
+            <div>
+                <h3>認養理念</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            </div>
+            <div>
+                <h3>圖文區</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>            
+            </div>
+        </div>
+
+        <div class="feature_pic"></div>
+    </section>
+
+    <section id="menu" class="menu"> 
+        <h2>菜單與餐飲</h2>
+        <p>提供各式特色餐點，包含貓咪專屬餐點、下午茶套餐等。</p>
+        <button onclick="window.open('Menu.html', '_blank')">查看完整菜單</button>
+
+
+    </section>
+    
+    <section id="promotions" class="promotions">
+        <h2>優惠與活動 <br>Promotions & Events</h2>
+        <div>
+            <div>
+                <p>買一送一，貓咪生日派對即將開放報名！</p>
+                <button>查看更多</button>
+            </div>
+            <div>
+                <p>買一送一，貓咪生日派對即將開放報名！</p>
+                <button>查看更多</button>
+            </div>
+            <div>
+                <p>買一送一，貓咪生日派對即將開放報名！</p>
+                <button>查看更多</button>
+            </div>
+            <div>
+                <p>買一送一，貓咪生日派對即將開放報名！</p>
+                <button>查看更多</button>        
+            </div>
+            <div>
+                <p>買一送一，貓咪生日派對即將開放報名！</p>
+                <button>查看更多</button>        
+            </div>
+        </div>
+        
+    </section>
+    <hr class="Line">
+    <section id="Reviews" class="Reviews">
+        <div class="Reviews_content">
+            <div class="Reviews_img">
+            </div>
+            <div class="Reviews_text">
+                <h2>顧客分享與推薦 <br>Customer Reviews</h2>
+                <div><p>顧客評論</p></div>
+                <div><p>顧客評論</p></div>
+                <div><p>顧客評論</p></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>聯繫我們：地址 | 電話 | 社交媒體</p>
+        <small>Copyright © 2025 CAT CAFE. All Rights Reserved</small>
+    </footer>
+</body>
+</html>

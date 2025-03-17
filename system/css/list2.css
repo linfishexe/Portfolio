@@ -1,0 +1,87 @@
+.list2 {
+    width: 30%;
+    height: 100%;
+    overflow-y: auto;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+    background-color: var(--maincolor);
+}
+
+.list2::-webkit-scrollbar {
+    width: 1em;
+}
+
+.list2::-webkit-scrollbar-button {
+    background: #4b6e7c;
+}
+
+.list2::-webkit-scrollbar-track-piece {
+    background: #4b6e7c;
+}
+
+.list2::-webkit-scrollbar-thumb {
+    background-color: var(--maincolor2);
+    border: 1px solid slategrey;
+}
+
+.list2 hr {
+    width: 85%;
+    margin-left: 7.5%;
+    border: 0.5px solid rgb(132, 132, 132);
+}
+
+/*---way------------------------------------*/
+
+.way {
+    width: 95%;
+    height: 33.333%;
+}
+
+.way h3 {
+    padding: 15px 0px 15px 10%;
+    color: var(--maincolor2);
+}
+
+.way p {
+    margin-left: 50px;
+    margin-top: 5px;
+    line-height: 2em;
+    color: beige;
+}
+
+.way #butt{ 
+    display: inline; 
+    position: relative;
+    top: 40px;
+    left: 10%;
+}
+
+.way .chooce {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 120px;
+    border: 0.25px solid;
+    border-color: var(--maincolor2);
+    color: rgb(57, 57, 57);
+    background-color: var(--maincolor2);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.way .explain{
+    width: 120px;
+    height: 40px;
+    border: 0.25px solid;
+    border-color: var(--maincolor2);
+    color: rgb(57, 57, 57);
+    background-color: var(--maincolor2);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.way button:hover {
+    background-color: beige;
+    color: rgb(70, 70, 70);
+}

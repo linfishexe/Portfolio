@@ -1,0 +1,96 @@
+/* 正常心跳60~100 
+血壓 120/80-140/90
+血氧飽和度75~100mmHg
+呼吸 12~20次
+體溫 36.9~37.1
+*/
+.operation {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: none;
+    position: relative;
+}
+
+.o_content{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.o_info{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #ccc;
+}
+.o_info > div{
+    height: 20%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.progress_bar{
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.o_content p{
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    position: absolute;
+    left: calc(50% + 15px);
+    top: calc(50% + 25px);
+    transform: translateX(-50%);
+}
+.progress_bar>div{
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+}
+.o_content > button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: var(--maincolor2);
+    background-color: rgb(197, 2, 2);
+    cursor: pointer;
+    transition: all 0.4s;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+    font-weight: bolder;
+}
+.o_content > button:hover{
+    background-color: rgb(174, 0, 0)
+}
+.o_content>h1{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.o_content>img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 57%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+.o_info span{
+    font-size: 2.5em;
+    color: rgb(197, 2, 2);
+}

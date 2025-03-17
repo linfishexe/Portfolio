@@ -1,0 +1,42 @@
+.patient {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: none;
+}
+
+.patient .information {
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 25%;
+    display: flex;
+}
+
+.patient h1 {
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+
+.patient img {
+    background-color: #ffffff;
+    position: relative;
+    margin: 10px;
+}
+
+.pat_infor{
+    width:  40%;
+    background-color: #ffffff;
+    border: 1px solid var(--maincolor);
+    position: relative;
+    top: 30px;
+}
+
+.patient .pat_infor td{
+    padding: 5px;
+    background-color: #dbdbe5;
+}

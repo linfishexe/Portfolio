@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{padding: 0; margin: 0; border: 0;box-sizing: border-box;}
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 60px;
+            width: 500px;
+            background-color: #fff;
+            box-shadow: 0 0 12px #ccc;
+        }
+        h1{margin: 15px;text-align: center;}
+        input:focus,select:focus{outline: none;}
+        input[type=text],select,input[type=number],input[type=email]{
+            width: 300px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+        option{
+            padding: 15px !important;
+        }
+        tr{
+            display: block;
+            margin-top: 15px;
+        }
+        td{transform: translateX(30px);}
+        .button{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .button input{
+            width: 120px;
+            height: 40px;
+            border: 1px solid #777;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .bg{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 30%;
+            top: 15%;
+            background-color: rgb(255, 241, 241);
+        }
+    </style>
+    <title>商品購買</title>
+</head>
+<body>
+    <main>
+        <div class="bg"></div>
+        <form action="#" method="post">
+            <h1>我要下單!</h1>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <th>電話</th>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <th>商品</th>
+                    <td>
+                        <select name="product" id="product" required>
+                            <option value="" selected>請選擇商品</option>
+                            <option value="A">玫瑰之水淡香水</option>
+                            <option value="B">輕香水</option>
+                            <option value="C">自由不羈淡香水</option>
+                            <option value="D">Miss Dior花漾迪奧淡香水</option>
+                            <option value="E">花草水語陽光甜橘淡香水</option>
+                            <option value="F">水漾玫瑰女性淡香水</option>
+                            <option value="G">花草水語夏恣紅榴淡香水</option>
+                            <option value="H">童話美人魚淡香水</option>
+                            <option value="H">安娜花園女性淡香水</option>
+                            <option value="H">小黑裙搖滾皮衣玫瑰淡香水</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>數量</th>
+                    <td><input type="number" required></td>
+                </tr>
+            </table>
+            <div class="button">
+                <input type="reset" value="清除按鈕">
+                <input type="submit" value="送出">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

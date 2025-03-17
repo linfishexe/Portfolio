@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+    <meta charset="UTF-8">
+    <title>達文西手術系統</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/list2.css">
+    <link rel="stylesheet" href="./css/screen.css">
+    <link rel="stylesheet" href="./css/list1.css">
+    <link rel="stylesheet" href="./css/patient.css">
+    <link rel="stylesheet" href="./css/analyze.css">
+    <link rel="stylesheet" href="./css/ensure.css">
+    <link rel="stylesheet" href="./css/operation.css">
+    <script src="./jquery-3.6.0.min.js"></script>
+   
+</head>
+<body>
+    <!-- <div id="loading">
+        <div class="box"></div>
+        <h6>Loading...</h6>
+    </div> -->
+    <div class="ensure">
+        <div class="mask"></div>
+        <div class="hint">
+            <p>確認要執行這個方案嗎?</p>
+           <button class="yes">確定</button>
+           <button class="no">取消</button>
+        </div>
+    </div>
+    <div class="info">
+        <div class="mask"></div>
+        <div class="inf">
+            <div class="hint">
+            <p>時長： 2h 成功率： 95% <br>
+                有什麼風險： 無 有無後遺症： 無<br>
+                適用程度： 98% 適用麻醉種類：半身麻醉 </p>
+            <button class="ok">ok</button>
+            </div>
+        </div>
+    </div>
+    <div id="box" class="box_hide">
+        <div class="list2">
+            <div class="way">
+                <h3>方案一</h3>
+                <p>時長： 2h 成功率： 95% <br>
+                   有什麼風險： 無 有無後遺症： 無<br>
+                   適用程度： 98% 適用麻醉種類：半身麻醉 </p>
+                    <div id="butt">
+                    <button class="explain">詳細說明</button>
+                    <button class="chooce">選擇我</button>
+                    </div>
+            </div>
+            <hr/>
+            <div class="way">
+                <h3>方案二</h3>
+                <p>時長： 2h 成功率： 93%<br>
+                   有什麼風險： 無 有無後遺症： 無<br>
+                   適用程度： 90% 適用麻醉種類： 半身麻醉</p>
+                   <div id="butt">
+                   <button class="explain">詳細說明</button>
+                   <button class="chooce">選擇我</button>
+                   </div>
+            </div>
+            <hr/>
+            <div class="way">
+                <h3>方案三</h3>
+                <p>時長： 2h,34m 成功率： 88%<br>
+                    有什麼風險：無 有無後遺症：可能造成...<br>
+                    適用程度： 80% 適用麻醉種類： 全身麻醉</p>
+                   <div id="butt">
+                   <button class="explain">詳細說明</button>
+                   <button class="chooce">選擇我</button>
+                    </div>
+            </div>
+            <hr/>
+            <div class="way">
+                <h3>方案四</h3>
+                <p>時長： 3h,12m 成功率： 86%<br>
+                    有什麼風險：無 有無後遺症：可能造成...<br>
+                    適用程度： 76% 適用麻醉種類： 全身麻醉</p>
+                    <div id="butt">
+                    <button class="explain">詳細說明</button>
+                    <button class="chooce">選擇我</button>
+                    </div>
+            </div>
+        </div>
+        <div class="side side_hide">
+            <div class="screen">
+                <div class="doctor">
+                    <h1>醫師資訊</h1> 
+                    <div class="information">
+                        <div class="doctor_intro">
+                            <img width="250px" height="250px" src="./doctor-01.svg"/>
+                            <p>徐醫師</p>
+                        </div>
+                        <table class="doc_infor">
+                            <tr>
+                                <th>性別</th>
+                                <td >男</td>
+                            </tr>
+                            <tr>
+                                <th>學歷</th>
+                                <td >國防醫學院醫學系畢業</td>
+                            </tr>
+                            <tr>
+                                <th>主治項目</th><br>
+                                <td >椎間盤凸出<br>
+                                    骨刺<br>
+                                    坐骨神經痛<br>
+                                    下背痛 <br>
+                                    壓迫性骨折<br>
+                                    退化性關節炎<br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="patient">
+                    <h1>病患資訊</h1>
+                    <div class="information">
+                        <div class="patient_list">
+                            <table>
+                                <tr>
+                                    <td>王大爺</td>
+                                </tr>
+                                <tr>
+                                    <td>王大爺</td>
+                                </tr>
+                                <tr>
+                                    <td>王大爺</td>
+                                </tr>
+                                <tr>
+                                    <td>王大爺</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <img width="200px" height="200px" src="./patient.png"/>
+                        <table class="pat_infor">
+                            <tr>
+                                <td>性別</td>
+                                <td>男</td>
+                            </tr>
+                            <tr>
+                                <td>工作</td><br>
+                                <td>鐵工</td>
+                            </tr>
+                            <tr>
+                                <td>目前狀況</td>
+                                <td>左腿膝蓋關節痛，無法正常行走(無力)，無法伸直</td>
+                            </tr>
+                            <tr>
+                                <td>原因</td>
+                                <td>患者因工作需要，長期姿勢不良、搬運重物，導致椎間突出，左腳無法施力及正常行走</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="analyze">
+                    <h1>方案分析</h1>
+                    <br>
+                    <p>類別</p>
+                    <input type="checkbox" id="關節重建手術" name="關節重建手術">
+                    <label for="scales">關節重建手術</label>
+                    <input type="checkbox" id="骨折科手術" name="骨折科手術">
+                    <label for="scales">骨折科手術</label>
+                    <input type="checkbox" id="脊椎外科手術" name="脊椎外科手術">
+                    <label for="scales">脊椎外科手術</label>
+                    <input type="checkbox" id="運動醫學科手術" name="運動醫學科手術">
+                    <label for="scales">運動醫學科手術</label>
+                    <input type="checkbox" id="手外科手術" name="手外科手術">
+                    <label for="scales">脊椎外科手術</label>
+                    <input type="checkbox" id="小兒骨科手術" name="小兒骨科手術">
+                    <label for="scales">小兒骨科手術</label>
+                    <br>
+                    <br>
+                    <p>手術日期</p>
+                    <input type="date">
+                    <br>
+                    <br>
+                    <p>請輸入患者狀況：</p>
+                    <textarea name="mytext"rows="6"cols="40"required>
+                    </textarea>
+                    <br>
+                    <p>請輸入此手術資訊與注意事項：</p>
+                    <textarea name="mytext"rows="6"cols="40"required>
+                    </textarea>
+                    <br>
+                    <br>
+                    <button>載入影像</button>
+                    <button class="b">分析方案</button>
+                </div>
+                <div class="operation">
+                    <div class="o_content">
+                        <div class="progress_bar"><div></div></div>
+                        <p>手術中...</p>
+                        <button>緊急停止</button>
+                        <h1>手術完成</h1>
+                        <img src="./check .png" >
+                    </div>
+                    <div class="o_info">
+                        <div class="heart">心跳：<span></span>bpm</div>
+                        <div class="blood_pressure">血壓：<span></span>mmHg</div>
+                        <div class="mm">血氧飽和度：<span></span>mmHg</div>
+                        <div class="breathe">呼吸：<span></span>bpm</div>
+                        <div class="tempertrue">體溫：<span></span>度</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list1">
+                <div class="menu">
+                    <h3>選單</h3>
+                    <ul class="movein">
+                        <li class="d">執刀醫師</li>
+                        <li class="a">病人資料</li>
+                        <li class="e">手術方案分析</li>
+                        <li class="c">突發狀況</li>
+                        <li class="logout"><a href="./login.html">登出</a></li>
+                    </ul>
+                </div>
+                <div class="c_menu">
+                    <ul>
+                        <li>大出血</li>
+                        <li>血壓異常</li>
+                        <li>心電圖異常</li>
+                        <li>心肌梗塞</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+    $('.list1 h3').click(function(){// 選單 滑入&滑出
+        $('.list1>.menu>ul').toggleClass('movein')
+    })
+//---------------------------------------------------------
+    $('.c').mouseenter(function(){//c_menu 出現
+        $('.c_menu ul').show();
+    });
+    $('.list1').mouseleave(function(){//跟c_menu 隱藏
+        $('.c_menu ul').hide();
+    });
+//---------------------------------------------------------
+    $('.b').click(function(){//方案展開
+        $('#box').removeClass('box_hide');
+        $('.side').removeClass('side_hide');
+    });
+//---------------------------------------------------------
+    setTimeout(function(){//進場動畫
+        $('.box,#loading h6').delay(500).fadeOut(400);//loading...字樣 跟 跳跳方塊 隱藏
+        $('#loading').delay(1500).fadeOut(400);//白色背景隱藏
+    },2500);
+// --------------------------------------------------------
+    $('.d').click(function(){// 醫生資訊 出現
+        $('.appear').removeClass('appear');
+        $('.doctor').toggleClass('appear');
+    });
+// -----------------------------------------------------
+    $('.a').click(function(){// 病人資訊 出現
+        $('.appear').removeClass('appear');
+        $('.patient').toggleClass('appear');
+    });
+// -----------------------------------------------------
+    $('.e').click(function(){// 分析 出現
+        $('.appear').removeClass('appear');
+        $('.analyze').toggleClass('appear');
+    });
+// -----------------------------------------------------
+    $('.yes,.no').click(()=>{//arrowfunction
+        $('.ensure').fadeOut(500);
+    });
+    $('.ok').click(()=>{//arrowfunction
+        $('.info').fadeOut(500);
+    });
+// -----------------------------------------------------
+    $('.way .chooce').click(()=>{
+        $('.ensure').fadeIn(500);
+    });
+    $('.way .explain').click(()=>{
+        $('.info').fadeIn(500);
+    });
+// ---------------------------------------------------
+    $('.yes').click(()=>{
+        let s = 10000
+        let count = 0
+        $('#box').addClass('box_hide');
+        $('.side').addClass('side_hide');
+        $('.appear').removeClass('appear');
+        $('.operation').fadeIn(250);
+        $('.progress_bar>div').delay(1000).animate({'width':'100%'},s); 
+        $('.progress_bar,.o_content>p,.o_content > button').delay(s+500).fadeOut(500);
+        $('.o_content>h1').delay(s+1000).fadeIn(500);
+        $('.o_content>img').delay(s+1300).fadeIn(500);
+        var heart = setInterval(function(){
+            let h_num = Math.floor(Math.random() * 10 + 60);
+            $('.heart>span').text(h_num);
+            if(count>39){clearInterval(heart);}
+            count++;
+        },1000);
+        var pressure = setInterval(function(){
+            let p_num = Math.floor(Math.random() * 10 + 90);
+            let p1_num = Math.floor(Math.random() * 20 + 90);
+            $('.blood_pressure>span').text(p_num +'/' +p1_num );
+            if(count>39){clearInterval(pressure);}
+            count++;
+        },1000);
+        var mm = setInterval(function(){
+            let m_num = Math.floor(Math.random() * 10 + 80);
+            $('.mm>span').text(m_num );
+            if(count>39){clearInterval(mm);}
+            count++;
+        },1000);
+        var breathe = setInterval(function(){
+            let b_num = Math.floor(Math.random() * 5 + 12);
+            $('.breathe>span').text(b_num );
+            if(count>39){clearInterval(breathe);}
+            count++;
+        },1000);
+        var tempertrue = setInterval(function(){
+            let t_num = Math.floor(Math.random() * 0.2 + 36.9);
+            $('.tempertrue>span').text(t_num );
+            if(count>39){clearInterval(tempertrue);}
+            count++;
+        },1000);
+    });
+//  ------------------------------------------------
+
+    
+</script>
+</html>

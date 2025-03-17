@@ -1,0 +1,30 @@
+*{margin: 0;font-family: '微軟正黑體';box-sizing: border-box;}
+body{overflow: hidden;}
+/* ---變數--- */
+:root{
+    --maincolor:#283b42;
+    --maincolor2:white;
+}
+/*-----all-------*/
+#box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    transition: all .4s;
+}
+/*------右邊------*/
+.side{
+    width: 70%;
+    height: 100%;
+    transition: all .4s;
+}
+/*--------其他---------*/
+.box_hide {width: 130% !important;left: -30% !important;}
+.side_hide{width: 100% !important;}
+.movein{transform: translateX(-100%);}
+.appear{display: block !important;} 
+
+

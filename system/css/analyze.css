@@ -1,0 +1,23 @@
+.analyze{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+    left: 25%;
+    top: 40px;
+    line-height:20px;
+    display: none;
+}
+.analyze button{
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--maincolor);
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.analyze h1{
+    width: 150px;
+    height: auto;
+}
