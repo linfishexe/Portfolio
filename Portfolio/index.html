@@ -13,7 +13,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top is-fixed" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="index.html">YU_Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,18 +22,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#About">關於我</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#FrontEnd">前端與後端</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Editing">多媒體</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Game">遊戲與建模</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+        <header class="masthead image-at" style="background-image: url('assets/img/home-bg.jpg');background-attachment: fixed;">
             <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>INTRODUCE MYSELF</h1>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-10">
+                        <div class="text-white display-6 text-center">
+                            <h1>Web Developer / Multimedia / Game</h1>
+                            <p class="fs-5 text">【 誠心學習｜歡迎合作🙌 】</p>
                         </div>
                     </div>
                 </div>
@@ -41,45 +44,276 @@
         </header>
         <div class="container px-2 px-lg-5">
             <div class="row gx-4 gx-lg-8 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="post-preview">
+                <div class="col-md-10 col-lg-8 col-xl-10">
+                    <div id="About" class="post-preview my-4">
                             <h2 class="post-title ">About Me</h2>
                             <p>
-                                114年應屆畢業生，是不專業但技能豐富的斜槓型選手<br>
-                                👉 ENPF<br>
-                                👉 自我開發與團隊溝通合作能力<br>
-                                👉 喜愛探索新技術、領域<br>
+                                您好，我們是就讀於資訊管理科系的大學生，擅長網頁前端設計與開發。雖然還在求學階段、經驗也還在不斷累積中，但已經完成幾個實際的小型網站專案，像是個人作品集、形象網站模擬等，後端開發也有涉略，如果有興趣想看，歡迎透過 LINE 或 Email 聯絡我看作品！<br><br>
+
+                                在高中設計科的訓練下，除了網頁相關技能，也接觸了多媒體製作與視覺設計，包括影片剪輯、LOGO與簡報圖製作、活動視覺素材等，能協助品牌或網站呈現更一致、有吸引力的視覺效果。<br><br>
+
+                                同時，我們也喜歡開發互動式內容，在課程中多次使用 Unreal Engine 製作多款遊戲，例如卡牌遊戲、橫向卷軸、密室逃脫等，透過這些作品不斷精進邏輯思考與遊戲體驗設計能力。<br><br>
+
+                                💡我可以協助您完成這些內容：<br>
+                                👉 靜態網站設計與切版（含 RWD 響應式設計）<br>
+                                👉 網頁視覺排版與互動功能<br>
+                                👉 個人網站、品牌形象頁面、小型專案網頁等<br>
+                                👉 網站後台（商品上架、圖片上傳、內容管理功能等）<br>
+                                👉 多媒體設計（剪輯、製圖、素材整理與輸出）<br>
+                                👉 使用 Unreal Engine 製作簡易遊戲原型或概念展示<br><br>
+
+                                希望能透過接案或合作，累積更多實戰經驗，讓我能夠成為更全方位的設計與開發者！
                             </p>
                     </div>
-                    <hr class="my-4" />
-                    <div class="post-preview">
+                    <hr>
+                    <div id="FrontEnd" class="post-preview my-4">
                         <h3></h3>
-                        <p><b>【前端與後端】</b><br>
-                            高職畢業於廣告設計科，在過程中接觸到了Web技術，對此相當感興趣，認為可以將設計科的所學與web技術融合，因此大學走向了資管。<br>
-                            除了前端外也有涉略一些後端技術，目前也積極在學習更多新的框架與技術。
+                        <p><b>🖥️ 前端與後端開發｜Web Development</b><br><br>
+                            結合 UI 設計與網站開發，打造具有互動性與視覺感的網頁。從 RWD 響應式切版到簡易的後台資料管理系統，都能獨立完成。<br>
+                            喜歡挑戰新的技術，有任何其他需求，我們都願意去嘗試喔!<br>
+                            👉 前端框架:主要使用Html，正在學習Vue.js，<br>
+                            👉 排版:SCSS、Bootstrap<br>
+                            👉 後端:大學期間主要學過PHP，也有接觸一些Oracle<br>
                         </p>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <a href="https://linfishexe.github.io/perfume_HW_Web/">
+                                        <div class="card h-100">
+                                            <img src="assets/img/淡香水.png" class="card-img-top image-container" alt="淡香水網頁">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">【淡香水介紹】</h5>
+                                                    <p class="card-text">
+                                                        簡介：這是一個針對香水的展示型網站。<br>
+                                                        功能亮點：每個區塊都有引導使用者向下看的按鈕。<br>
+                                                        使用技術：HTML / CSS
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://linfishexe.github.io/Operation_system/login.html">
+                                        <div class="card h-100">
+                                            <img src="assets/img/達文西手術.png" class="card-img-top image-container" alt="達文西手術">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">【 模擬AI結合達文西手術展示 】</h5>
+                                                    <p class="card-text">
+                                                        簡介：這是一個針對AI應用課程中，對於AI結合醫療機器的展示網站。此為小組作業，主要負責網站製作。<br>
+                                                        功能亮點：運用Javascript製作出，模擬檢測到的數據與手術方案的生成、開始到結束的流程。<br>
+                                                        使用技術：HTML / CSS / Javascript
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://linfishexe.github.io/nav_menu/">
+                                        <div class="card h-100">
+                                            <img src="assets/img/接案.png" class="card-img-top " alt="接案1">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">【 品牌形象網站 】</h5>
+                                                    <p class="card-text">
+                                                        簡介：這是某次接案子的成品，主要在介紹某間商店(現內容已變更過)。<br>
+                                                        功能亮點：使用Media query 製作 RWD，運用Javascript做出頁面元素的滑入效果，增加使用者體驗感。<br>
+                                                        使用技術：HTML / CSS / Javascript
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://linfishexe.github.io/vue_ToDoList/dist/index.html">
+                                        <div class="card h-100">
+                                            <img src="assets/img/ToDoList.png" class="card-img-top" alt="ToDoList">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">【 To Do List 】</h5>
+                                                    <p class="card-text">
+                                                        簡介：在學習Vue的過程，嘗試製作的一個簡易的ToDoList。<br>
+                                                        功能亮點：有新增、刪除及勾選已完成等功能<br>
+                                                        使用技術：Vue.js / css
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://cspss9803.github.io/Portfoli/self_introduction/">
+                                        <div class="card h-100">
+                                            <img src="assets/img/自我介紹.png" class="card-img-top " alt="接案1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">【 個人形象網站 】</h5>
+                                                <p class="card-text">
+                                                    簡介：這是某次接案子的成品，是個人自我介紹網站。<br>
+                                                    功能亮點：根據案主的需求，幫她設計了較具科技感的網頁，利用animation製作Banner的Typing動畫及其他hover效果。<br>
+                                                    使用技術：Html / css
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://cspss9803.github.io/Portfoli/dynamic_art/index.html">
+                                        <div class="card h-100">
+                                            <img src="assets/img/動態網站.png" class="card-img-top" alt="ToDoList">
+                                            <div class="card-body">
+                                                <h5 class="card-title">【 動態網站 】</h5>
+                                                <p class="card-text">
+                                                    功能亮點：運用Javascript製作出Banner的動態與負片效果，並且使用PHP及MySQL製作登入、登出及後台管理頁面等，也有完整的忘記密碼、更改密碼等功能。目前僅能展示出網頁的部分，須看完整歡迎透過 LINE 或 Email 聯絡我看作品！<br>
+                                                    使用技術：Html / css / Javascript / PHP / MySQL
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                     <hr class="my-4" />
-                    <div class="post-preview">
+                    <div id="Editing" class="post-preview">
                         <p>
-                            <b>【多媒體】</b><br>
-                            高職經歷也讓我擅長許多多媒體的工具，列如Illustrator、Premiere、After Effect等等<br>
+                            <b>🎨 多媒體創作｜Multimedia</b><br><br>
+                            利用剪輯與平面設計技術，讓內容更生動、有質感。無論是活動宣傳、社群圖像、LOGO設計，還是剪輯過的影片內容，皆能依需求製作，強化視覺傳達。<br>
+                            能提供網站圖片、影片製作的一條龍服務，絕對超值!
                             👉 TQC 非線性剪輯證照<br>
                             👉 2022年虛擬偶像設計大賽-銅獎<br>
                             👉 2023年GameForce影音創作大賽-神話獎<br>
                             👉 111年資訊月資訊技能應用競賽 ( 項目:視傳設計技術應用 )個人組-優勝
                         </p>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <a href="https://youtu.be/SYCckC7eaRs?si=NbykewY2T6UTEnKB">
+                                        <div class="card h-100">
+                                            <img src="assets/img/GameForce.png" class="card-img-top object-fit-cover" alt="GameForce影音創作大賽">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 Introduce Terraria 》</h5>
+                                                    <p class="card-text">
+                                                        簡介：此影片為參加GameForce影音創作大賽之作品，介紹了Terraria這款遊戲的內容與玩法，榮獲神話獎。<br>
+                                                        使用技術：Premiere / After Effect
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://youtu.be/c_Tn54m9k20?si=2Kl6hI-4ErDDeu93">
+                                        <div class="card h-100">
+                                            <img src="assets/img/2022虛擬偶像.png" class="card-img-top object-fit-cover" alt="2022虛擬偶像設計大賽">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 你今天元宇宙了嗎? 》</h5>
+                                                    <p class="card-text">
+                                                        簡介：此影片為參加2022虛擬偶像設計大賽之作品，榮獲銅獎。<br>與另3位組員共同製作，介紹全息投影的原理與應用。<br>
+                                                        使用技術：Premiere / VRoid Studio / 動態捕捉設備
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://drive.google.com/file/d/1igFR6U-xBOIzbVxEfeKNz8Ohe9Dd9P-1/view?usp=sharing">
+                                        <div class="card h-100">
+                                            <img src="assets/img/2024虛擬偶像.png" class="card-img-top object-fit-cover" alt="2023虛擬偶像設計大賽">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 創作與GPT 》</h5>
+                                                    <p class="card-text">
+                                                        簡介:此影片為參加2024虛擬偶像設計大賽之作品，不過可惜未入圍。<br>與另2位組員共同製作，介紹Chat-GPT在創作上應用的便利性。<br>
+                                                        使用技術：Premiere / VRoid Studio / 動態捕捉設備</p>
+                                                    
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                        <div class="card overflow-hidden h-100">
+                                            <img src="assets/img/AI作品.jpg" class="card-img-top object-fit-cover" alt="AI作品">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 FUN貼紙 》</h5>
+                                                    <p class="card-text">此作品是為其他專題小組設計的方形貼紙。<br>
+                                                        使用技術：Premiere / VRoid Studio / 動態捕捉設備
+                                                    </p>
+                                                    
+                                                </div>
+                                        </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                     <hr class="my-4" />
-                    <div class="post-preview">
+                    <div id="Game" class="post-preview">
                         <p>
-                            <b>【遊戲開發與建模】</b><br>
-                            大學的專業除了網頁開發外，另一個重點就是遊戲開發和建模，主要使用Maya和Substance Painter，也有在慢慢學習blender。<br>
-                            我擅長使用Unreal Engine遊戲引擎開發遊戲，
-                            專題製作了《Antidote》，是款雙人遊玩的解謎遊戲，我在其中主要負責遊戲的企劃及程式撰寫。<br>
-                            👉 校內專題展中，《Antidote》榮獲佳作<br>
+                            <b>🎮遊戲製作｜Game</b><br><br>
+                            大學的專業除了網頁開發外，另一個重點就是遊戲開發和建模，建模主要使用Maya和Substance Painter，也有在慢慢學習blender。<br>
+                            遊戲部分主要使用Unreal Engine遊戲引擎開發遊戲，如有需要Unity也可以嘗試!
+                            如有簡單的建模需求也沒問題，歡迎詢問作品喔~
+                            👉 校內專題展中，《Antidote》遊戲作品 榮獲佳作<br>
                             👉 Autodesk Certified User: Maya
                         </p>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <a href="https://youtu.be/3-Egs_-vwuM?si=w_kT6VY9WcWc_SK1">
+                                        <div class="card h-100">
+                                            <img src="assets/img/Antidote_.png" class="card-img-top" alt="大學專題-Antidote">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《Antidote》</h5>
+                                                    <p class="card-text">
+                                                        此作品為大學專題，榮獲校內佳作<br>
+                                                        簡介:這是一款雙人密室逃脫遊戲，玩家們需要在環境幽暗的公司大樓內部相互合作，解開層層謎題，拼湊出事件的真相，並在最後利用製作好的解藥，拯救眾員工們。<br>
+                                                        製作團隊總共6人，我主要負責企劃、分工及程式部分，尤其在多人連線這塊花費了相當多的心力。
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://drive.google.com/file/d/11SbLInVTXFtqeJr_gXnSKFupGe8_eUsZ/view?usp=sharing">
+                                        <div class="card h-100">
+                                            <img src="assets/img/3D吃豆魚.png" class="card-img-top" alt="3D吃豆魚">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 3D吃豆魚 》</h5>
+                                                    <p class="card-text">
+                                                        簡介:這是一款以第三視角操控小丑魚的3D遊戲，參考來源是"小精靈"遊戲，在吃掉豆子的同時要小心不被巡邏的鯊魚或砲彈打到
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://drive.google.com/file/d/1ly6E0uQylYfwn8EWLLd8H4_4ARhHuIZ4/view?usp=sharing">
+                                        <div class="card h-100">
+                                            <img src="assets/img/小農.png" class="card-img-top" alt="小農餓了">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 小農餓了 》</h5>
+                                                    <p class="card-text">簡介:這是一款2.5D的橫向卷軸遊戲，小農夫在回家的路上充滿危險，需要一面維持飽腹感一面安全到家</p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://drive.google.com/file/d/1fk2E9TAyQambQyyQBhB2ksUIFP-vV31f/view?usp=sharing">
+                                        <div class="card h-100">
+                                            <img src="assets/img/決策之戰.png" class="card-img-top" alt="小農餓了">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 決策之戰 》</h5>
+                                                    <p class="card-text">簡介:這是一款3D版的雙人卡牌遊戲，遊戲內容參考"名偵探學院"中的小遊戲，卡片分成兩邊，一邊為剪刀、石頭、布，另一邊是必勝、無為、交換，每回合需要在兩邊各選擇一張卡進行對決的策略遊戲，三戰兩勝為主。</p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://drive.google.com/file/d/101f3wNoTye5ei8wJJ5eBIJuAc8vxzcTy/view?usp=sharing">
+                                        <div class="card h-100">
+                                            <img src="assets/img/BussinessDuck.png" class="card-img-top" alt="小農餓了">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">《 Business Duck 》</h5>
+                                                    <p class="card-text">簡介:這是一款3D版的多人策略遊戲，可提供2-4人遊玩，遊戲內容參考"名偵探學院"中的商業獨角獸遊戲，玩家會以鴨子形象進行遊玩，每輪都要選擇方向並骰骰子決定前進次數，接著選擇相鄰的兩塊領地佔領，最後領地最多的玩家獲勝。</p>
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>

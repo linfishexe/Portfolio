@@ -4,26 +4,27 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
 */
 window.addEventListener('DOMContentLoaded', () => {
-    let scrollPos = 0;
     const mainNav = document.getElementById('mainNav');
     const headerHeight = mainNav.clientHeight;
-    window.addEventListener('scroll', function() {
-        const currentTop = document.body.getBoundingClientRect().top * -1;
-        if ( currentTop < scrollPos) {
-            // Scrolling Up
-            if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
-                mainNav.classList.add('is-visible');
-            } else {
-                console.log(123);
-                mainNav.classList.remove('is-visible', 'is-fixed');
-            }
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY || window.pageYOffset;
+
+        // 加上固定位置
+        if (scrollTop > 0) {
+            mainNav.classList.add('is-fixed');
         } else {
-            // Scrolling Down
-            mainNav.classList.remove(['is-visible']);
-            if (currentTop > headerHeight && !mainNav.classList.contains('is-fixed')) {
-                mainNav.classList.add('is-fixed');
-            }
+            mainNav.classList.remove('is-fixed');
         }
-        scrollPos = currentTop;
+
+        // 根據捲動高度加/移背景色
+        if (scrollTop > headerHeight) {
+            mainNav.classList.remove('is-transparent');
+            mainNav.classList.add('has-bg');
+        } else {
+            mainNav.classList.remove('has-bg');
+            mainNav.classList.add('is-transparent');
+        }
     });
-})
+});
+
